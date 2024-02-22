@@ -1,0 +1,88 @@
+.client-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.number-input {
+    width: 150px;
+}
+
+.input-textarea {
+    width: 500px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 8px 12px;
+    font-size: 14px; 
+    line-height: 1.5; 
+    border: 1px solid #d9d9d9; 
+    border-radius: 2px;
+    min-width: 300px;
+    max-width: 1000px;
+    min-height: 100px;
+    max-height: 250px;
+    resize: both;
+
+}
+
+.input-textarea:hover {
+    border-color: #40a9ff; 
+}
+
+.input-textarea:focus {
+    outline: 0;
+    border-color: #40a9ff; 
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); 
+}
+
+.status-column {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    width: 133px;
+    padding-right: 15px;
+    left: -11px;
+}
+
+
+.comment-static-column {
+    max-width:310px;
+    padding-right: 30px;
+}
+
+.score-form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.score-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../images/shevron-down.svg'); 
+    background-repeat: no-repeat;
+    outline: none;
+    width: 65px;
+
+    background-position: right 10px center; 
+    background-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.score-select:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.score-select:hover {
+    border-color: #40a9ff;
+}

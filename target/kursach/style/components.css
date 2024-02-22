@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.active-nav {
+    color: rgba(24, 144, 255, 1);
+    cursor: default;
+}
+
+.default-nav{
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-nav {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.default-nav:hover,
+.default-nav:focus {
+    color: #40a9ff;
+    transition: 0.3s;
+}
+
+.default-nav:active {
+    color: #096dd9;
+}
+
+.default-nav:visited {
+    color: #000;
+}
+
+table {
+    font-size: 14px;
+    border-collapse: separate;
+    border-spacing: 0 40px;
+}
+
+th {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.first-column {
+    width: 150px;
+}
+
+.first-column-main {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.first-column-secondary {
+    margin-top: 5px;
+}
+
+
+.status-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.status-dot {
+    height: 6px;
+    width: 6px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-text {
+    width: 120px;
+}
+
+.waiting-cell {
+    color: #FFC700;
+}
+
+.waiting-cell .status-dot{
+    background-color: #FFC700;
+}
+
+.complete-cell {
+    color: #0EAB00;
+}
+
+.complete-cell .status-dot{
+    background-color: #0EAB00;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.basic-form-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.basic-input {
+    width: 268px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    font-size: 14px;
+}
+
+.basic-input:hover {
+    border-color: #40a9ff;
+}
+
+.basic-input:focus {
+    outline: 0;
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.basic-input[name="password"]{
+    margin-bottom: 10px;
+}
+
+.password-block {
+    margin-bottom: 35px;
+}
+
+.password-block label{
+    font-size: 16px;
+}
+
+.main-button {
+    width: 220px;
+    padding: 10px;
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.secondary-button {
+    height: 33px;
+    width: 140px;
+    padding: 5px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+}
+
+.secondary-button:hover {
+    border-color: #40a9ff;
+    color: #40a9ff;
+}
+.secondary-buttony:active {
+    background-color: #0050b3;
+    border-color: #0050b3;
+}
+
+.error-message {
+    font-size: 12px;
+    text-align: center;
+    color: #CC1414;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 12px;
+    text-align: center;
+    color: #0EAB00;
+    margin-bottom: 20px;
+}
+
+.link  {
+    text-decoration: none;
+    color: #1890FF;
+    border-bottom: rgba(24, 144, 255, 0.47) 0.125em solid;
+    transition: 0.5s;
+}
+
+.link:hover {
+    color: rgba(0, 115, 220, 1);
+    border-bottom: rgba(24, 144, 255, 1) 0.125em solid;
+}
+
+.link:visited {
+    color: #1890FF;
+    border-bottom: rgba(24, 144, 255, 0.47) 0.125em solid;
+    transition: 0.5s;
+}
+
+.default-table {
+    margin-top: 50px;
+}
+
+.description-column {
+    width: 370px;
+    padding-right: 40px;
+}
+
+.date-cell {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.comment-column textarea {
+    padding: 8px 12px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    resize: none;
+}
+
+.comment-column textarea:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: 0;
+}
+
+.comment-column textarea:hover {
+    border-color: #40a9ff;
+}
+
+.basic-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../images/shevron-down.svg');
+    background-repeat: no-repeat;
+    outline: none;
+    width: 294px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+
+    background-position: right 10px center;
+    background-size: 12px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.basic-select:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.basic-select:hover {
+    border-color: #40a9ff;
+}
